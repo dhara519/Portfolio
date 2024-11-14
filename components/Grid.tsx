@@ -10,16 +10,7 @@ export const Grid = () => {
     <section id="aboutGrid">
       <BentoGrid className="w-full py-20">
         {gridItems.map(
-          ({
-            id,
-            title,
-            description,
-            className,
-            titleClassName,
-            img,
-            imgClassName,
-            spareImg,
-          }) => (
+          ({ id, title, description, className, titleClassName, img }) => (
             <BentoGridItem
               id={id}
               key={id}
@@ -27,8 +18,6 @@ export const Grid = () => {
               description={description}
               className={className}
               img={img}
-              imgClassName={imgClassName}
-              spareImg={spareImg}
               titleClassName={titleClassName}
             />
           )

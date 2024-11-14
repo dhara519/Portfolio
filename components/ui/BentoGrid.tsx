@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { TechStackIcons } from "./TechStackIcons";
 import ConfettiOnCopyEmail from "./Confetti";
 // Need minimize div's and rethink classnames if still going to use index file for data
@@ -35,16 +34,14 @@ export const BentoGridItem = ({
   description,
   id,
   img,
-  spareImg,
-  imgClassName,
-}: {
+}: // imgClassName,
+{
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   id?: number;
   img?: string;
-  spareImg?: string;
-  imgClassName?: string;
+  // imgClassName?: string;
   titleClassName?: string;
 }) => {
   // useState to control state of confetti

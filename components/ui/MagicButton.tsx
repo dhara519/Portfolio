@@ -4,14 +4,12 @@ export const MagicButton = ({
   title,
   icon,
   position,
-  handleClick,
   otherClasses,
   onClick,
 }: {
   title?: string;
-  icon?: React.React.Node;
+  icon?: React.ReactNode;
   position?: string;
-  handleClick?: () => void;
   otherClasses?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   children?: React.ReactNode;

@@ -1,16 +1,17 @@
+// Confetti is disabled for now. Work on responsive resizing / container structure
 "use client";
-import Confetti from "react-confetti";
-import React, { useState } from "react";
+// import Confetti from "react-confetti";
+// import React, { useState } from "react";
 import { MagicButton } from "./MagicButton";
 
 export default function ConfettiOnCopyEmail() {
   const text = "dhara519@gmail.com";
-  const [ShowConfetti, SetShowConfetti] = useState(false);
+  // const [ShowConfetti, SetShowConfetti] = useState(false);
 
   const CelebrateCopy = () => {
     navigator.clipboard.writeText(text);
-    SetShowConfetti(true);
-    setTimeout(() => SetShowConfetti(false), 4000);
+    // SetShowConfetti(true);
+    // setTimeout(() => SetShowConfetti(false), 4000);
   };
 
   return (
