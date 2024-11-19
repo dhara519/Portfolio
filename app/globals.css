@@ -96,3 +96,20 @@
     height: 100%;
   }
 }
+
+#heroContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  #heroContent {
+    padding: 8px;
+  }
+
+  .MagicButton {
+    margin: 8px 0; /* Stack buttons with space on smaller screens */
+  }
+}
