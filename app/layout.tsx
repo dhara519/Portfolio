@@ -15,11 +15,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Dhara Patel (:",
   description: "Dhara's Portfolio",
 };
 
-// Needed to use useEfect to aviod dark hydration error while using SSR
 export default function RootLayout({
   children,
 }: Readonly<{

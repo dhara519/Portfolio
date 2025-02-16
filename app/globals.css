@@ -97,7 +97,7 @@
   }
 }
 
-#heroContent {
+#Grid_Design {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -105,7 +105,7 @@
 }
 
 @media (max-width: 768px) {
-  #heroContent {
+  #Grid_Design {
     padding: 8px;
   }
 

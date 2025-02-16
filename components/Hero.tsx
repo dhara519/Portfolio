@@ -10,8 +10,8 @@ import { FaHome } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div id="Hero" className="t-36">
-      <div>
+    <section id="Hero" className="max-w-8xl w-full">
+      <div id="Spotlights">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -27,14 +27,18 @@ const Hero = () => {
 
       {/* Grid Design */}
       <div
-        id="heroContent"
+        id="Grid_Design"
         className="h-full w-full top-0  sm:flex-wrap md:justify-between dark:bg-black-100 bg-white  dark:bg-grid-white/[0.036] bg-grid-black/[0.2] relative flex items-center"
       >
-        {/* Radial gradient gives grid a multidimensional look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div
+          id="Radial_Gradient_Overlay"
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        ></div>
 
-        {/* Text */}
-        <div className="flex justify-center relative -top-[15%] my-20 z-10">
+        <div
+          id="Text_Box"
+          className="flex justify-center relative -top-[15%] my-20 z-10"
+        >
           <div className="max-w-[89vw] md:max-w-6xl lg:max-w-[80wv] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-center text-sm text-blue-100 ">
               Under Construction. Built with Next.js
@@ -89,7 +93,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
