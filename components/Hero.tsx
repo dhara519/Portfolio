@@ -10,7 +10,7 @@ import { FaHome } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="Hero" className="max-w-8xl w-full">
+    <section id="Hero" className="max-w-8xl h-screen w-full">
       <div id="Spotlights">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
