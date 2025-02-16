@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Color Values are written in HSL noion: Hue, Saturation, Ligthness */
+/* Color Values are written in HSL notion: Hue, Saturation, Ligthness */
 @layer base {
   :root {
     --background: 0 0% 100%;

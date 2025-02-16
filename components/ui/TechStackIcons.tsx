@@ -13,7 +13,7 @@ export const TechStackIcons = () => {
       <StackIcon name="reactjs" />
       <StackIcon name="redux" />
       <StackIcon name="npm2" />
-      <img src="next_icon.svg" alt="nextjs" />
+      <img src="next_js.svg" alt="nextjs" />
       <StackIcon name="prisma" />
       <StackIcon name="aws" />
       <img src="git.svg" alt="github" />

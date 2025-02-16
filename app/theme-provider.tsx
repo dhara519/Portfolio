@@ -1,8 +1,7 @@
 "use client";
 
-// ThemeProvider is a library for managing theme state across the app
 import * as React from "react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { ThemeProvider as NextThemesProvider } from "next-themes"; // ThemeProvider manages theme state across the app
 import { type ThemeProviderProps } from "next-themes/dist/types";
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {

@@ -25,15 +25,15 @@ const Hero = () => {
 
       <FloatingNav navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]} />
 
-      {/* Grid UI */}
+      {/* Grid Design */}
       <div
         id="heroContent"
         className="h-full w-full top-0  sm:flex-wrap md:justify-between dark:bg-black-100 bg-white  dark:bg-grid-white/[0.036] bg-grid-black/[0.2] relative flex items-center"
       >
-        {/* Radial gradient for the container for grid to give a faded look */}
+        {/* Radial gradient gives grid a multidimensional look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-        {/* Words for hero piece UI */}
+        {/* Text */}
         <div className="flex justify-center relative -top-[15%] my-20 z-10">
           <div className="max-w-[89vw] md:max-w-6xl lg:max-w-[80wv] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-center text-sm text-blue-100 ">
@@ -61,7 +61,7 @@ const Hero = () => {
                 />
               </a>
               <a
-                href="\resume.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
@@ -73,11 +73,10 @@ const Hero = () => {
                   otherClasses={""}
                 />
               </a>
-              {/* target="_blank" ensures the link opens a new tab; rel="noopener noreferrer" is a security layer */}
               <a
                 href="https://www.linkedin.com/in/dhara-patel-7a20b9bb/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" // for security
               >
                 <MagicButton
                   title="LinkedIn"

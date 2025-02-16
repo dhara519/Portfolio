@@ -1,4 +1,4 @@
-// Confetti is disabled for now. Work on responsive resizing / container structure
+// Confetti is disabled until you fix responsive resizing / container structure sad
 "use client";
 // import Confetti from "react-confetti";
 // import React, { useState } from "react";

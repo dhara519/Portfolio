@@ -1,13 +1,8 @@
 import { cn } from "@/lib/utils";
 import { TechStackIcons } from "./TechStackIcons";
 import ConfettiOnCopyEmail from "./Confetti";
-// Need minimize div's and rethink classnames if still going to use index file for data
-// Centralize logic and classnames for easier to read components and easier to understand flow
 
-// Bento Grid renders a <div> which is the container that holds all grid items.
-// Bentro Grid is a called a wrapper and it recieves two props: children and classname
-// className is used for CSS stuff and whatever
-// Grid component (the array mapping returns) passes multiple <BentoGridItem> components as children to <BentoGrid>.
+// Bento Grid Container
 export const BentoGrid = ({
   className,
   children,
@@ -27,7 +22,7 @@ export const BentoGrid = ({
   );
 };
 
-// All the boxes inside the grid
+// Bento Grid Item
 export const BentoGridItem = ({
   className,
   title,
@@ -44,8 +39,6 @@ export const BentoGridItem = ({
   // imgClassName?: string;
   titleClassName?: string;
 }) => {
-  // useState to control state of confetti
-  //
   return (
     <div
       className={cn(
@@ -71,20 +64,21 @@ export const BentoGridItem = ({
           </div>
           <div className="font-sans font-normal text-2xl text-neutral-600 dark:text-neutral-300">
             {description}
-            {/* If current item in array === 3 render the TechStackIcons component, else if img is defined (truthy) render img, else render nothing bc there is no img to render */}
+            {/* If ID 3 render the TechStackIcons component, else render img if img, else none bc theres no img to render */}
             {id === 3 ? (
               <TechStackIcons />
             ) : (
               img && (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={img}
                   alt="imgProp"
                   className="w-full h-full object-cover"
                 />
               )
-              // Used <img/> instead of <Image/> bc <Image/> requires height/width props. The images' svg files hold predefined dimensions. Img lets you skip manually extracting/typing them bc svg files are lightweight
+              // Used <img/> instead of <Image/> bc <Image/> requires height/width props. The svg files have predefined dimensions. Img lets you skip manually extracting said dimensions
             )}
-            {/* Confetti isn't responsively sizing properly. Clean up containers above or use external animation */}
+            {/* Confetti isn't responsively sizing properly. Clean up containers above or use non-react confetti */}
             {id == 5 && <ConfettiOnCopyEmail />}
           </div>
         </div>
